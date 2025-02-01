@@ -21,3 +21,4 @@ This is a simple student management application built using AngularJS. It allows
 - Enter student details in the form and click "Add".
 - The student will appear in the list below.
 - You can click the "Delete" button next to any student to remove them from the list.
+
