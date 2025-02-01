@@ -13,7 +13,7 @@ This is a simple student management application built using AngularJS. It allows
 - **CSS**: For styling the application.
 
 ## Installation
-1. Download or clone the repository.
+1. Download or clone the repository
 2. Open the `fourthlesson.html` file in your browser to run the application locally.
 3. Optionally, you can host the files on a local web server or Tomcat server for further testing.
 
