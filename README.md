@@ -1,6 +1,6 @@
 # Student Management Website
 
-This is a simple student management application built using AngularJS. It allows users to add, view, and delete students. The app is designed to help manage a list of students with details like first name, last name, address, city, state, and country.
+This is a simple student management application built using AngularJS. It allows users to add, view, and delete students. The app is designed to help manage a list of students with details like first name, last name, address, city, state, and country. 
 
 ## Features
 - Add a new student with details (First Name, Last Name, Address, City, State, Country).
