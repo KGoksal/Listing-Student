@@ -1,23 +1,35 @@
-# Student Management Website
+# Student Management Application
 
-This is a simple student management application built using AngularJS. It allows users to add, view, and delete students. The app is designed to help manage a list of students with details like first name, last name, address, city, state, and country. 
+This is a simple **Student Management** web application built using **AngularJS**. It allows users to add, view, and remove students dynamically.
 
 ## Features
-- Add a new student with details (First Name, Last Name, Address, City, State, Country).
-- View a list of all added students.
-- Delete students from the list.
+- Add new students with **First Name, Last Name, Address, City, State, and Country**.
+- View the list of added students.
+- Remove students from the list.
+- Responsive and user-friendly interface.
 
 ## Technologies Used
-- **AngularJS**: Framework for dynamic single-page applications.
-- **HTML**: For structuring the webpage.
-- **CSS**: For styling the application.
+- **AngularJS** (Frontend framework)
+- **HTML, CSS** (UI styling and layout)
+- **Font Awesome** (Icons for UI elements)
+- **Google Fonts** (Typography enhancements)
 
-## Installation 
-1. Download or clone the repository
-2. Open the `fourthlesson.html` file in your browser to run the application locally.
-3. Optionally, you can host the files on a local web server or Tomcat server for further testing.
+## Setup Instructions
+1. Download or clone this repository.
+2. Open the `index.html` file in a browser.
+3. Add new students using the form.
+4. View and remove students dynamically.
 
-## Usage
-- Enter student details in the form and click "Add".
-- The student will appear in the list below.
-- You can click the "Delete" button next to any student to remove them from the list.
+## Future Enhancements
+- Implement **backend support** with a database.
+- Add **search and filter** functionality for student records.
+- Improve UI/UX with modern styling frameworks.
+
+
+<img width="1047" alt="Screenshot 2025-02-08 at 10 43 10 AM" src="https://github.com/user-attachments/assets/aed2b98e-d668-40b7-9c38-35d0a99bc3c1" />
+
+
+
+## Conclusion
+This project demonstrates a simple **CRUD (Create, Read, Delete)** application using **AngularJS**. It provides a basic yet functional interface for managing student records. Future updates can enhance its capabilities, making it a more robust student management system.
+
