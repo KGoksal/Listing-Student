@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html ng-app="StudentApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .delete-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .delete-btn:hover {
+            background-color: #c0392b;
+        }
+        .student-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .student-name {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .student-details {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" ng-controller="StudentController">
+        <h1>Student List</h1>
+        <h2>Add New Student</h2>
+        <form ng-submit="addThisStudent()">
+            <input type="text" ng-model="newStudent.firstName" placeholder="First Name" required>
+            <input type="text" ng-model="newStudent.lastName" placeholder="Last Name" required>
+            <input type="text" ng-model="newStudent.address" placeholder="Address">
+            <input type="text" ng-model="newStudent.city" placeholder="City">
+            <input type="text" ng-model="newStudent.state" placeholder="State">
+            <input type="text" ng-model="newStudent.country" placeholder="Country">
+            <button class="btn-primary" type="submit">
+                <i class="fas fa-user-plus"></i> Add Student
+            </button>
+        </form>
+
+        <h2>Student List</h2>
+        <ul>
+            <li ng-repeat="student in students">
+                <div class="student-info">
+                    <span class="student-name">{{student.firstName}} {{student.lastName}}</span>
+                    <span class="student-details">{{student.address}}, {{student.city}}, {{student.state}}, {{student.country}}</span>
+                </div>
+                <button class="delete-btn" ng-click="deleteStudent($index)">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        angular.module('StudentApp', [])
+            .controller('StudentController', function($scope) {
+                $scope.students = [
+                    {
+                        firstName: "John",
+                        lastName: "Smith",
+                        address: "123 Main St",
+                        city: "Houston",
+                        state: "TX",
+                        country: "USA"
+                    },
+                    {
+                        firstName: "Emma",
+                        lastName: "Johnson",
+                        address: "456 Oak Ave",
+                        city: "Dallas",
+                        state: "TX",
+                        country: "USA"
+                    }
+                ];
+
+                $scope.newStudent = {
+                    firstName: '',
+                    lastName: '',
+                    address: '',
+                    city: '',
+                    state: '',
+                    country: ''
+                };
+
+                $scope.addThisStudent = function() {
+                    if ($scope.newStudent.firstName && $scope.newStudent.lastName) {
+                        $scope.students.push({
+                            firstName: $scope.newStudent.firstName,
+                            lastName: $scope.newStudent.lastName,
+                            address: $scope.newStudent.address || 'N/A',
+                            city: $scope.newStudent.city || 'N/A',
+                            state: $scope.newStudent.state || 'N/A',
+                            country: $scope.newStudent.country || 'N/A'
+                        });
+
+                        // Clear form fields
+                        $scope.newStudent = {
+                            firstName: '',
+                            lastName: '',
+                            address: '',
+                            city: '',
+                            state: '',
+                            country: ''
+                        };
+                    }
+                };
+
+                $scope.deleteStudent = function(index) {
+                    $scope.students.splice(index, 1);
+                };
+            });
+    </script>
+</body>
+</html>
