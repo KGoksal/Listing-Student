@@ -32,4 +32,3 @@ This is a simple **Student Management** web application built using **AngularJS*
 
 ## Conclusion
 This project demonstrates a simple **CRUD (Create, Read, Delete)** application using **AngularJS**. It provides a basic yet functional interface for managing student records. Future updates can enhance its capabilities, making it a more robust student management system.
-
