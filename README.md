@@ -13,7 +13,7 @@ This is a simple **Student Management** web application built using **AngularJS*
 - **HTML, CSS** (UI styling and layout)
 - **Font Awesome** (Icons for UI elements)
 - **Google Fonts** (Typography enhancements)
-
+ 
 ## Setup Instructions
 1. Download or clone this repository.
 2. Open the `index.html` file in a browser.
