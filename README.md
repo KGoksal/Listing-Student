@@ -21,7 +21,7 @@ This is a simple **Student Management** web application built using **AngularJS*
 4. View and remove students dynamically.
 
 ## Future Enhancements
-- Implement **backend support** with a database.
+- Implement **backend support** with a database. 
 - Add **search and filter** functionality for student records.
 - Improve UI/UX with modern styling frameworks.
 
