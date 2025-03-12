@@ -8,9 +8,9 @@ This is a simple **Student Management** web application built using **AngularJS*
 - Remove students from the list.  
 - Responsive and user-friendly interface.  
   
-## Technologies Used
-- **AngularJS** (Frontend framework)
-- **HTML, CSS** (UI styling and layout)
+## Technologies Used 
+- **AngularJS** (Frontend framework) 
+- **HTML, CSS** (UI styling and layout) 
 - **Font Awesome** (Icons for UI elements)
 - **Google Fonts** (Typography enhancements)
  
