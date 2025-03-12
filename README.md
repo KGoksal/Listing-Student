@@ -7,7 +7,7 @@ This is a simple **Student Management** web application built using **AngularJS*
 - View the list of added students. 
 - Remove students from the list. 
 - Responsive and user-friendly interface. 
- 
+  
 ## Technologies Used
 - **AngularJS** (Frontend framework)
 - **HTML, CSS** (UI styling and layout)
