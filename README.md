@@ -10,9 +10,9 @@ This is a simple **Student Management** web application built using **AngularJS*
   
 ## Technologies Used 
 - **AngularJS** (Frontend framework) 
-- **HTML, CSS** (UI styling and layout) 
-- **Font Awesome** (Icons for UI elements)
-- **Google Fonts** (Typography enhancements)
+- **HTML, CSS** (UI styling and layout)  
+- **Font Awesome** (Icons for UI elements) 
+- **Google Fonts** (Typography enhancements) 
  
 ## Setup Instructions
 1. Download or clone this repository.
