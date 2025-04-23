@@ -5,8 +5,8 @@ This is a simple **Student Management** web application built using **AngularJS*
 ## Features
 - Add new students with **First Name, Last Name, Address, City, State, and Country**.  
 - View the list of added students.   
-- Remove students from the list.  
-- Responsive and user-friendly interface.   
+- Remove students from the list.   
+- Responsive and user-friendly interface.     
   
 ## Technologies Used  
 - **AngularJS** (Frontend framework)    
