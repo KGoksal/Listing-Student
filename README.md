@@ -15,9 +15,9 @@ This is a simple **Student Management** web application built using **AngularJS*
 - **Google Fonts** (Typography enhancements)  
  
 ## Setup Instructions
-1. Download or clone this repository.
-2. Open the `index.html` file in a browser.
-3. Add new students using the form.
+1. Download or clone this repository. 
+2. Open the `index.html` file in a browser. 
+3. Add new students using the form. 
 4. View and remove students dynamically.
 
 ## Future Enhancements
